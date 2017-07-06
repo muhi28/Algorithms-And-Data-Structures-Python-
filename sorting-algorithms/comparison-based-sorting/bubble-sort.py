@@ -4,18 +4,6 @@ import random
 Example of Bubble Sort Algorithm
 """
 
-
-# main function
-def main():
-    data = getData(10)
-
-    print "Before Sorting -> {0:}".format(data)
-
-    bubbleSort(data)
-
-    print "After Sorting -> {0:}".format(data)
-
-
 # initializes the list with random numbers
 def getData(n):
     data = [0] * n
@@ -49,4 +37,15 @@ def printData(data):
         print "Number {0:d} -> {1:d}".format(i, data[i])
 
 
-main()
+class BubbleSort:
+    def __init__(self):
+        pass
+
+    if __name__ == '__main__':
+        data = getData(10)
+
+        print "Before Sorting -> {0:}".format(data)
+
+        bubbleSort(data)
+
+        print "After Sorting -> {0:}".format(data)

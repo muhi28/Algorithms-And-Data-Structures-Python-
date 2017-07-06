@@ -14,26 +14,6 @@ class Switch(object):
         return True
 
 
-# main function
-def main():
-    data_size = input("How many elements do you want to insert?\t")
-
-    # ---------------------- pivot on right side ----------------------
-    data = getData(data_size)
-
-    print "\nBefore Sorting -> {0:}".format(data)
-
-    quicksort(data, 0, len(data) - 1, 1)
-    print "After Sorting with QuickSort (pivot on right side) -> {0:}\n\n".format(data)
-
-    # ---------------------- median of five ---------------------
-    data = getData(data_size)
-    print "Before Sorting -> {0:}".format(data)
-
-    quicksort(data, 0, len(data) - 1, 2)
-    print "After Sorting with QuickSort (median of five) -> {0:}\n".format(data)
-
-
 # initializes the list with random numbers
 def getData(n):
     data = [0] * n
@@ -103,4 +83,25 @@ def case(*args):
     return any((arg == Switch.value for arg in args))
 
 
-main()
+# used to start the main function
+class QuickSort:
+    def __init__(self):
+        pass
+
+    if __name__ == '__main__':
+        data_size = input("How many elements do you want to insert?\t")
+
+        # ---------------------- pivot on right side ----------------------
+        data = getData(data_size)
+
+        print "\nBefore Sorting -> {0:}".format(data)
+
+        quicksort(data, 0, len(data) - 1, 1)
+        print "After Sorting with QuickSort (pivot on right side) -> {0:}\n\n".format(data)
+
+        # ---------------------- median of five ---------------------
+        data = getData(data_size)
+        print "Before Sorting -> {0:}".format(data)
+
+        quicksort(data, 0, len(data) - 1, 2)
+        print "After Sorting with QuickSort (median of five) -> {0:}\n".format(data)
