@@ -34,17 +34,17 @@ def insertionSort(data):
         data[j] = numb
 
 
-class InsertionSort:
-    def __init__(self):
-        pass
+def main():
+    data_size = input("How many elements do you want to insert?\t")
 
-    if __name__ == '__main__':
-        data_size = input("How many elements do you want to insert?\t")
+    data = getData(data_size)
 
-        data = getData(data_size)
+    print "\nBefore Sorting -> {0:}".format(data)
 
-        print "\nBefore Sorting -> {0:}".format(data)
+    insertionSort(data)
 
-        insertionSort(data)
+    print "After Sorting with Insertion Sort -> {0:}".format(data)
 
-        print "After Sorting with Insertion Sort -> {0:}".format(data)
+
+if __name__ == '__main__':
+    main()

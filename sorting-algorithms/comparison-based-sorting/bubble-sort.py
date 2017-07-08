@@ -37,15 +37,15 @@ def printData(data):
         print "Number {0:d} -> {1:d}".format(i, data[i])
 
 
-class BubbleSort:
-    def __init__(self):
-        pass
+def main():
+    data = getData(10)
 
-    if __name__ == '__main__':
-        data = getData(10)
+    print "Before Sorting -> {0:}".format(data)
 
-        print "Before Sorting -> {0:}".format(data)
+    bubbleSort(data)
 
-        bubbleSort(data)
+    print "After Sorting -> {0:}".format(data)
 
-        print "After Sorting -> {0:}".format(data)
+
+if __name__ == '__main__':
+    main()

@@ -47,12 +47,7 @@ def getData(n):
     return arr
 
 
-class MergeSort:
-    def __init__(self):
-        pass
-
-
-if __name__ == '__main__':
+def main():
     data_size = input("How many elements do you want to insert?\t")
     data = getData(data_size)
 
@@ -61,3 +56,6 @@ if __name__ == '__main__':
     output = mergeSort(data)
 
     print "Data after sorting with Merge Sort -> {0:}".format(output)
+
+if __name__ == '__main__':
+    main()

@@ -59,14 +59,13 @@ def radixSort(arr):
         exp *= 10
 
 
-class RadixSort:
-    def __init__(self):
-        pass
-
-
-if __name__ == '__main__':
+def main():
     data_size = input("How many elements do you want to insert?\t")
     data = getData(data_size)
     print "Data before Sorting -> {0:}".format(data)
     radixSort(data)
     print "Data after Sorting -> {0:}".format(data)
+
+
+if __name__ == '__main__':
+    main()
