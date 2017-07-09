@@ -12,28 +12,22 @@ def getData(n):
 
 
 # sorts the data based on the counting sort algorithm
-def countingSort(arr, mx):
-    count = [0] * (mx + 1)
-    output = [0] * (len(arr))
+def countingSort(arr, max_value):
+    m = max_value + 1
+
+    count = [0] * m
+
+    for a in arr:
+        count[a] += 1
 
     i = 0
-    while i < len(arr):
-        count[arr[i]] += 1
-        i += 1
 
-    i = 1
-    while i < len(count):
-        count[i] += count[i - 1]
-        i += 1
+    for a in range(m):
 
-    j = len(arr) - 1
-
-    while j >= 0:
-        output[count[arr[j] - 1]] = arr[j]
-        count[arr[j]] -= 1
-        j -= 1
-
-    return output
+        for b in range(count[a]):
+            arr[i] = a
+            i += 1
+    return arr
 
 
 def main():

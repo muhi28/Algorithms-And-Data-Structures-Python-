@@ -13,17 +13,18 @@ def getData(n):
 
 # sorts the data based on the selection sort algorithm
 def selectionSort(arr):
-    # search for the smallest number
-    # saves it in the minimum spot and then repeats searching through the array
-    for i in range(0, len(arr)):
-        minimum = i
-        for j in range(i, len(arr)):
+    # search for the largest number
+    # saves it in the maximum spot and then repeats searching through the array
 
-            if arr[minimum] > arr[j]:
-                minimum = j
+    for fill_slot in range(len(arr) - 1, 0, -1):
+        max_pos = 0
 
-        swap(arr, i, minimum)
+        for location in range(1, fill_slot + 1):
 
+            if arr[location] > arr[max_pos]:
+                max_pos = location
+
+        swap(arr, fill_slot, max_pos)
     return arr
 
 

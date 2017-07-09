@@ -21,14 +21,8 @@ def bubbleSort(data):
         for j in range(i):
 
             if data[j] > data[j + 1]:
-                swap(data, j)
-
-
-# used to swap data
-def swap(data, i):
-    z = data[i]
-    data[i] = data[i + 1]
-    data[i + 1] = z
+                # used to swap data
+                data[j], data[j + 1] = data[j + 1], data[j]
 
 
 # used to show the data within the console

@@ -38,7 +38,8 @@ def quicksort(data, left, right, mode):
             j -= 1
 
         if i <= j:
-            swap(data, i, j)
+            # used to swap data
+            data[i], data[j] = data[j], data[i]
 
             i += 1
             j -= 1
@@ -47,13 +48,6 @@ def quicksort(data, left, right, mode):
         quicksort(data, left, j, mode)
     if i < right:
         quicksort(data, i, right, mode)
-
-
-# used to swap data
-def swap(data, i, j):
-    z = data[i]
-    data[i] = data[j]
-    data[j] = z
 
 
 # prints the data within the console
