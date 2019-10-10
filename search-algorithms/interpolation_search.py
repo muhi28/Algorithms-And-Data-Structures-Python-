@@ -32,17 +32,17 @@ def interpolationSearch(arr, key):
 
 
 def main():
-    data_size = input("How many elements do you want to insert?\t")
+    data_size = int(input("How many elements do you want to insert?\t"))
     data = getData(data_size)
-    print "Data -> {0:}".format(data)
+    print(f"Data -> {data:}")
 
     # search for random number between 1 and 100
-    print "Found value -> {0:s}\n".format(interpolationSearch(sorted(data), random.randint(1, 100)))
+    print(f"Found value -> {interpolationSearch((data), random.randint(1, 100)):s}\n")
 
     # search for fixed number
     data = [2, 4, 8, 20, 30, 80, 140, 857, 900]
-    print "Data -> {0:}".format(data)
-    print "Found value -> {0:s}".format(interpolationSearch(data, 30))
+    print(f"Data -> {data:}")
+    print(f"Found value -> {interpolationSearch(data, 30):s}")
 
 
 if __name__ == '__main__':

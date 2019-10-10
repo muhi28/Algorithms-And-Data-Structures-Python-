@@ -54,9 +54,9 @@ def main():
     data_size = input("How many elements do you want to insert?\t")
     data = getData(data_size)
 
-    print "Before Sorting -> {0:}".format(data)
+    print("Before Sorting -> {0:}".format(data))
 
-    print "After Sorting -> {0:}".format(sort(data, len(data) - 1))
+    print("After Sorting -> {0:}".format(sort(data, len(data) - 1)))
 
 
 if __name__ == '__main__':

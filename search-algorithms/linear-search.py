@@ -22,15 +22,15 @@ def linearSearch(arr, value):
 def main():
     data_size = input("How many elements do you want to insert?\t")
     data = getData(data_size)
-    print "Data -> {0:}".format(data)
+    print("Data -> {0:}".format(data))
 
     # search for random number between 1 and 100
-    print "Found value -> {0:s}\n".format(linearSearch(data, random.randint(1, 100)))
+    print("Found value -> {0:s}\n".format(linearSearch(data, random.randint(1, 100))))
 
     # search for fixed number
     data = [4, 80, 47, 55, 10, 5, 6, 8, 1, 1, 2, 698]
-    print "Data -> {0:}".format(data)
-    print "Found value -> {0:s}".format(linearSearch(data, 2))
+    print("Data -> {0:}".format(data))
+    print("Found value -> {0:s}".format(linearSearch(data, 2)))
 
 
 if __name__ == '__main__':

@@ -53,7 +53,7 @@ def quicksort(data, left, right, mode):
 # prints the data within the console
 def printData(data):
     for i in range(len(data)):
-        print "Number {0:d} -> {1:d}".format(i, data[i])
+        print("Number {0:d} -> {1:d}".format(i, data[i]))
 
 
 def checkForPivot(data, left, right, mode):
@@ -84,17 +84,17 @@ def main():
     # ---------------------- pivot on right side ----------------------
     data = getData(data_size)
 
-    print "\nBefore Sorting -> {0:}".format(data)
+    print("\nBefore Sorting -> {0:}".format(data))
 
     quicksort(data, 0, len(data) - 1, 1)
-    print "After Sorting with QuickSort (pivot on right side) -> {0:}\n\n".format(data)
+    print("After Sorting with QuickSort (pivot on right side) -> {0:}\n\n".format(data))
 
     # ---------------------- median of five ---------------------
     data = getData(data_size)
-    print "Before Sorting -> {0:}".format(data)
+    print("Before Sorting -> {0:}".format(data))
 
     quicksort(data, 0, len(data) - 1, 2)
-    print "After Sorting with QuickSort (median of five) -> {0:}\n".format(data)
+    print("After Sorting with QuickSort (median of five) -> {0:}\n".format(data))
 
 
 if __name__ == '__main__':

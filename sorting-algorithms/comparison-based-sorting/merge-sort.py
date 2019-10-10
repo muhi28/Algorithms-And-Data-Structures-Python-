@@ -51,11 +51,12 @@ def main():
     data_size = input("How many elements do you want to insert?\t")
     data = getData(data_size)
 
-    print "Data before sorting -> {0:}".format(data)
+    print("Data before sorting -> {0:}".format(data))
 
     output = mergeSort(data)
 
-    print "Data after sorting with Merge Sort -> {0:}".format(output)
+    print("Data after sorting with Merge Sort -> {0:}".format(output))
+
 
 if __name__ == '__main__':
     main()

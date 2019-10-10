@@ -35,15 +35,15 @@ def binarySearch(arr, value):
 def main():
     data_size = input("How many elements do you want to insert?\t")
     data = getData(data_size)
-    print "Data -> {0:}".format(data)
+    print("Data -> {0:}".format(data))
 
     # search for random number between 1 and 100
-    print "Found value -> {0:s}\n".format(binarySearch(data, random.randint(1, 100)))
+    print("Found value -> {0:s}\n".format(binarySearch(data, random.randint(1, 100))))
 
     # search for fixed number
     data = [2, 4, 8, 20, 30, 80, 140, 857, 900]
-    print "Data -> {0:}".format(data)
-    print "Found value -> {0:s}".format(binarySearch(data, 900))
+    print("Data -> {0:}".format(data))
+    print("Found value -> {0:s}".format(binarySearch(data, 900)))
 
 
 if __name__ == '__main__':

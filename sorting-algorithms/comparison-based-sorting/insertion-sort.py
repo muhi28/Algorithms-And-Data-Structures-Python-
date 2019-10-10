@@ -18,7 +18,7 @@ def getData(n):
 # used to show the data within the console
 def printData(data):
     for i in range(len(data)):
-        print "Number {0:d} -> {1:d}".format(i, data[i])
+        print("Number {0:d} -> {1:d}".format(i, data[i]))
 
 
 # sorts the given data based on the insertion sort algorithm
@@ -39,11 +39,11 @@ def main():
 
     data = getData(data_size)
 
-    print "\nBefore Sorting -> {0:}".format(data)
+    print("\nBefore Sorting -> {0:}".format(data))
 
     insertionSort(data)
 
-    print "After Sorting with Insertion Sort -> {0:}".format(data)
+    print("After Sorting with Insertion Sort -> {0:}".format(data))
 
 
 if __name__ == '__main__':

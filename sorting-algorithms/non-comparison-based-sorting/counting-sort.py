@@ -33,9 +33,9 @@ def countingSort(arr, max_value):
 def main():
     data_size = input("How many elements do you want to insert?\t")
     data = getData(data_size)
-    print "Data before Sorting -> {0:}".format(data)
+    print("Data before Sorting -> {0:}".format(data))
 
-    print "Data after Sorting -> {0:}".format(countingSort(data, max(data)))
+    print("Data after Sorting -> {0:}".format(countingSort(data, max(data))))
 
 
 if __name__ == '__main__':

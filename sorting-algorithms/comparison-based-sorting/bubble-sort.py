@@ -28,17 +28,17 @@ def bubbleSort(data):
 # used to show the data within the console
 def printData(data):
     for i in range(len(data)):
-        print "Number {0:d} -> {1:d}".format(i, data[i])
+        print("Number {0:d} -> {1:d}".format(i, data[i]))
 
 
 def main():
     data = getData(10)
 
-    print "Before Sorting -> {0:}".format(data)
+    print("Before Sorting -> {0:}".format(data))
 
     bubbleSort(data)
 
-    print "After Sorting -> {0:}".format(data)
+    print("After Sorting -> {0:}".format(data))
 
 
 if __name__ == '__main__':

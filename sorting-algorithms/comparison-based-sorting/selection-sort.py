@@ -37,9 +37,9 @@ def swap(arr, index1, index2):
 def main():
     data_size = input("How many elements do you want to insert?\t")
     data = getData(data_size)
-    print "Data before Sorting -> {0:}".format(data)
+    print("Data before Sorting -> {0:}".format(data))
 
-    print "Data after Sorting -> {0:}".format(selectionSort(data))
+    print("Data after Sorting -> {0:}".format(selectionSort(data)))
 
 
 if __name__ == '__main__':

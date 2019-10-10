@@ -37,9 +37,9 @@ def main():
     data_size = input("How many elements do you want to insert?\t")
     data = getData(data_size)
 
-    print "Before Sorting -> {0:}".format(data)
+    print("Before Sorting -> {0:}".format(data))
 
-    print "After Sorting -> {0:}".format(stooge(data))
+    print("After Sorting -> {0:}".format(stooge(data)))
 
 
 if __name__ == '__main__':
